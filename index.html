@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link to BOOTSTRAP. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Metatag to start setting resposiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to CSS. -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Linkg to Jquery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+    <title>Gif Poker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center subjects">
+            <div class="col-12 subjectList">
+                <div class=subjectList-block1>
+                    <div class="form-group ">
+                        <textarea class="form-control" id="searcher" rows="1"
+                            placeholder="Input a new subject"></textarea>
+                        <button type="submit" class="btn btn-info addSubject">Hit Me!</button>
+                    </div>
+                    <div class="selectedSubjects">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id ante est. Aliquam
+                            tristique eleifend vehicula. Cras a nisi ipsum. Fusce semper eu diam eget luctus. Mauris nec
+                            mattis mi. Vivamus vel dolor erat. Praesent at molestie mauris. Mauris sed lobortis ligula.
+                            Aenean dictum diam ac ligula suscipit pellentesque. Donec ut laoreet lacus. Vivamus sagittis
+                            ligula ac neque malesuada, eu ultrices diam ultrices. Fusce dapibus facilisis varius. Donec
+                            vel iaculis mi. Sed vehicula sit amet metus at lobortis. Cras consectetur sapien eget
+                            tincidunt convallis.</p>
+                    </div>
+                </div>
+                <div class=subjectList-block2>
+                    <img id="pokerMaze" src="assets/images/PokerMaze.png">
+                </div>
+
+            </div>
+        </div>
+        <div class="row justify-content-center pokerTable">
+            <div class="col-12 pokerPad">
+                <div class=pokerTable-block1>
+                    <img id="pokerTable" src="assets/images/PokerTable.png">
+                </div>
+                <div class="cardsContainer">
+                    <img class="tableCards" id="card1" src="assets/images/PokerMaze.png">
+                    <img class="tableCards" id="card2" src="assets/images/PokerMaze.png">
+                    <img class="tableCards" id="card3" src="assets/images/PokerMaze.png">
+                    <img class="tableCards" id="card4" src="assets/images/PokerMaze.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
