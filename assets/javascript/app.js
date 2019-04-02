@@ -86,6 +86,18 @@ $(document).on("click", ".cassinoToken", function () {
     gifPokerGame.farePaid = true;
     $("#pokerMaze").css("filter", "drop-shadow(15px 15px 5px black)");
     $("#pokerMaze").css("margin-right", "5px");
+    $("#pokerMaze").attr("src", "assets/images/PokerMaze2.png")
+    if (gifPokerGame.cardsOnTable) {
+        $("#slot1").css("left", "-50px");
+        $("#slot1").css("visibility", "hidden");
+        $("#slot2").css("left", "-200px");
+        $("#slot2").css("visibility", "hidden");
+        $("#slot3").css("left", "-350px");
+        $("#slot3").css("visibility", "hidden");
+        $("#slot4").css("left", "-500px");
+        $("#slot4").css("visibility", "hidden");
+        gifPokerGame.cardsOnTable = false;
+    }
 
 })
 
@@ -101,6 +113,7 @@ $("#pokerMaze").on("click", function () {
         gifPokerGame.displayHand();
         $(this).css("filter", "drop-shadow(5px 5px 5px black)");
         $(this).css("margin-right", 0);
+        $("#pokerMaze").attr("src", "assets/images/PokerMaze.png")
         gifPokerGame.farePaid = false;
     }
 })
