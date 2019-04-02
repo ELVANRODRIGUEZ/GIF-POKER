@@ -12,6 +12,10 @@ body {
 body {
     min-width: 360px;
     padding-bottom: 50px;
+    background-image: url("../images/FloorCarpet.jpg");
+    background-size: 200px;
+    background-repeat: repeat-y repeat-x;
+
 }
 
 .container {
@@ -19,8 +23,6 @@ body {
     padding: 2vh;
     margin: 0;
 }
-
-.row {}
 
 .subjectList {
     display: flex;
@@ -138,22 +140,28 @@ body {
 
 #slot1 {
     transform: rotate(5deg);
+    visibility: hidden;
+    left: -50px;
 
 }
 
 #slot2 {
     transform: rotate(-15deg);
-
+    visibility: hidden;
+    left: -200px;
 }
 
 #slot3 {
     transform: rotate(8deg);
-
+    visibility: hidden;
+    left: -350px;
+    
 }
 
 #slot4 {
     transform: rotate(3deg);
-
+    visibility: hidden;
+    left: -500px;
 }
 
 .gifImages {
