@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100vw;
-    
+
 }
 
 body {
@@ -86,7 +86,7 @@ body {
     height: 35px;
     margin: 10px;
     filter: drop-shadow(5px 5px 5px black);
-    
+
 }
 
 .cassinoToken:hover {
@@ -133,8 +133,8 @@ body {
 }
 
 .tableCards {
-    height: 45vh;
-    filter: drop-shadow(5px 5px 5px black);
+    width: 240px;
+    /* filter: drop-shadow(5px 5px 5px black); */
     margin: 15px 10px;
     z-index: 0;
 
@@ -157,7 +157,7 @@ body {
     transform: rotate(8deg);
     visibility: hidden;
     left: -350px;
-    
+
 }
 
 #slot4 {
@@ -167,8 +167,8 @@ body {
 }
 
 .gifImages {
-    width: 225.6px;
-    max-height: 155.5px;
+    width: 240px;
+    max-height: 155px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -191,14 +191,14 @@ body {
 @media screen and (max-width: 1150px) {
 
     .tableCards {
-        height: 40vh;
-       
+        width: 200px;
+
     }
 
     .gifImages {
-        width: 200.6px;
-        max-height: 130.4px;
-       
+        width: 200px;
+        max-height: 130px;
+
     }
 
 }
@@ -206,14 +206,14 @@ body {
 @media screen and (max-width: 1000px) {
 
     .tableCards {
-        height: 35vh;
+        width: 175px;
 
     }
 
     .gifImages {
-        width: 175.5px;
-        max-height: 105.3px;
-       
+        width: 175px;
+        max-height: 105px;
+
     }
 
 }
@@ -221,14 +221,14 @@ body {
 @media screen and (max-width: 900px) {
 
     .tableCards {
-        height: 32vh;
+        width: 160px;
 
     }
 
     .gifImages {
-        width: 160.4px;
-        max-height: 90.2px;
-       
+        width: 160px;
+        max-height: 90px;
+
     }
 
 }
@@ -272,7 +272,7 @@ body {
 
     .selectedSubjects {
         height: calc(25vh - 40px);
-    
+
     }
 
 

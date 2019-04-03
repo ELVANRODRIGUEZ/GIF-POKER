@@ -46,28 +46,36 @@ var gifPokerGame = {
             })
         })
 
+        this.flipCoin();
+        setTimeout(function () {
+            gifPokerGame.flipCard();
+        }, 500);
     },
 
     displayHand: function () {
         if (!this.cardsOnTable) {
+            this.flipCard();
             $("#slot1").css("visibility", "visible");
             $("#slot1").animate({
                 left: "+=50"
             }, 100, function () {});
             setTimeout(function () {
                 $("#slot2").css("visibility", "visible");
+                gifPokerGame.flipCard();
                 $("#slot2").animate({
                     left: "+=200"
                 }, 200, function () {});
             }, 100);
             setTimeout(function () {
                 $("#slot3").css("visibility", "visible");
+                gifPokerGame.flipCard();
                 $("#slot3").animate({
                     left: "+=350"
                 }, 300, function () {});
             }, 300);
             setTimeout(function () {
                 $("#slot4").css("visibility", "visible");
+                gifPokerGame.flipCard();
                 $("#slot4").animate({
                     left: "+=500"
                 }, 400, function () {});
@@ -76,7 +84,20 @@ var gifPokerGame = {
             this.cardsOnTable = true;
         }
 
+    },
+
+    flipCard: function () {
+        var cardFlipSound = new Audio("assets/sounds/CardFlip.mp3");
+        cardFlipSound.volume = .6;
+        cardFlipSound.play();
+    },
+
+    flipCoin: function () {
+        var flipCoinpSound = new Audio("assets/sounds/CoinThrow.mp3");
+        flipCoinpSound.volume = .6;
+        flipCoinpSound.play();
     }
+
 }
 
 $(document).on("click", ".cassinoToken", function () {
@@ -84,9 +105,11 @@ $(document).on("click", ".cassinoToken", function () {
     gifPokerGame.selectedSubject = gifPokerGame.selectedSubject.replace(/\s/g, "%20");
     gifPokerGame.retrieveSubject(gifPokerGame.selectedSubject);
     gifPokerGame.farePaid = true;
-    $("#pokerMaze").css("filter", "drop-shadow(15px 15px 5px black)");
-    $("#pokerMaze").css("margin-right", "5px");
-    $("#pokerMaze").attr("src", "assets/images/PokerMaze2.png")
+    setTimeout(function () {
+        $("#pokerMaze").css("filter", "drop-shadow(15px 15px 5px black)");
+        $("#pokerMaze").css("margin-right", "5px");
+        $("#pokerMaze").attr("src", "assets/images/PokerMaze2.png")
+    }, 800);
     if (gifPokerGame.cardsOnTable) {
         $("#slot1").css("left", "-50px");
         $("#slot1").css("visibility", "hidden");
@@ -135,7 +158,7 @@ $(document).on("click", ".newSubject", function () {
     $("img[subject*='" + subject + "']").remove();
 })
 
-$("#searcher").on("keydown", function(event) {
+$("#searcher").on("keydown", function (event) {
     if (event.which == "13") {
         event.preventDefault();
         gifPokerGame.inputSubject = $("#searcher").val().toUpperCase();
