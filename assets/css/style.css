@@ -20,13 +20,14 @@ body {
 
 .container {
     width: 100%;
-    padding: 2vh;
-    margin: 0;
+    /* padding: 1vh; */
+    /* margin: 1vh; */
 }
 
 .subjectList {
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
 
 }
 
@@ -45,6 +46,8 @@ body {
     display: inline-block;
     height: 35px;
     padding: 3px;
+    border: 0;
+    font: bolder;
     font-size: 10pt;
 }
 
@@ -52,17 +55,18 @@ body {
     display: inline-block;
     width: 35%;
     height: 35px;
-    background-color: rgb(71, 67, 51);
-    border: 4px solid rgb(43, 40, 26);
+    background-color: rgb(0, 0, 0);
+    border: 0;
     padding: 3px;
     font-size: 10pt;
+    border-radius: 5px;
 }
 
 
 .selectedSubjects {
     /* background-color: white; */
     width: 100%;
-    height: calc(20vh - 40px);
+    height: calc(30vh - 40px);
     overflow: auto;
     font-size: 8pt;
     color: white;
@@ -74,6 +78,7 @@ body {
     background-color: rgb(0, 0, 0);
     padding: 6px;
     border-radius: 5px;
+    font-size: 10pt;
 
 }
 
@@ -95,7 +100,7 @@ body {
 }
 
 #pokerMaze {
-    height: 25vh;
+    height: 30vh;
     /* min-height: 60px; */
     filter: drop-shadow(5px 5px 5px black);
 
@@ -108,9 +113,9 @@ body {
 }
 
 .cardsContainer {
-    width: 90vw;
+    width: 100vw;
     display: flex;
-    margin-top: 50px;
+    margin-top: 15px;
     padding: 15px;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -128,7 +133,7 @@ body {
 }
 
 .tableCards {
-    height: 35vh;
+    height: 45vh;
     filter: drop-shadow(5px 5px 5px black);
     margin: 15px 10px;
     z-index: 0;
@@ -137,33 +142,33 @@ body {
 
 #slot1 {
     transform: rotate(5deg);
-    visibility: hidden;
-    left: -50px;
+    /* visibility: hidden; */
+    /* left: -50px; */
 
 }
 
 #slot2 {
     transform: rotate(-15deg);
-    visibility: hidden;
-    left: -200px;
+    /* visibility: hidden; */
+    /* left: -200px; */
 }
 
 #slot3 {
     transform: rotate(8deg);
-    visibility: hidden;
-    left: -350px;
+    /* visibility: hidden; */
+    /* left: -350px; */
     
 }
 
 #slot4 {
     transform: rotate(3deg);
-    visibility: hidden;
-    left: -500px;
+    /* visibility: hidden; */
+    /* left: -500px; */
 }
 
 .gifImages {
-    max-width: 25vh;
-    max-height: 15vh;
+    width: 225.6px;
+    max-height: 155.5px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -172,8 +177,8 @@ body {
 }
 
 #powerBy {
-    height: 90px;
-    width: 180px;
+    height: 75px;
+    width: 160px;
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -183,27 +188,47 @@ body {
 
 
 
+@media screen and (max-width: 1150px) {
+
+    .tableCards {
+        height: 40vh;
+       
+    }
+
+    .gifImages {
+        width: 200.6px;
+        max-height: 130.4px;
+       
+    }
+
+}
+
 @media screen and (max-width: 1000px) {
 
-    .cardsContainer {
-        min-width: 90vw;
+    .tableCards {
+        height: 35vh;
 
     }
 
+    .gifImages {
+        width: 175.5px;
+        max-height: 105.3px;
+       
+    }
 
 }
 
 @media screen and (max-width: 900px) {
 
     .tableCards {
-        height: 30vh;
+        height: 32vh;
 
     }
 
     .gifImages {
-        max-width: 21vh;
-        max-height: 13vh;
-
+        width: 160.4px;
+        max-height: 90.2px;
+       
     }
 
 }
@@ -211,24 +236,17 @@ body {
 @media screen and (max-width: 800px) {
 
 
-    .tableCards {
-        height: 25vh;
-
-    }
-
-    .gifImages {
-        max-width: 18vh;
-        max-height: 12vh;
+    .cardsContainer {
+        width: 570px;
 
     }
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 
     .cardsContainer {
-        min-width: initial;
-        max-width: 400px;
+        width: 100%;
 
     }
 
@@ -248,13 +266,14 @@ body {
     }
 
     .cardsContainer {
-        width: 210px;
-        /* height: 450px; */
-        align-items: baseline;
+        width: 330px;
 
     }
 
-
+    .selectedSubjects {
+        height: calc(25vh - 40px);
+    
+    }
 
 
 }
