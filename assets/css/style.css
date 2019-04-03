@@ -142,28 +142,28 @@ body {
 
 #slot1 {
     transform: rotate(5deg);
-    /* visibility: hidden; */
-    /* left: -50px; */
+    visibility: hidden;
+    left: -50px;
 
 }
 
 #slot2 {
     transform: rotate(-15deg);
-    /* visibility: hidden; */
-    /* left: -200px; */
+    visibility: hidden;
+    left: -200px;
 }
 
 #slot3 {
     transform: rotate(8deg);
-    /* visibility: hidden; */
-    /* left: -350px; */
+    visibility: hidden;
+    left: -350px;
     
 }
 
 #slot4 {
     transform: rotate(3deg);
-    /* visibility: hidden; */
-    /* left: -500px; */
+    visibility: hidden;
+    left: -500px;
 }
 
 .gifImages {

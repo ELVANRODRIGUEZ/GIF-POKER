@@ -134,3 +134,11 @@ $(document).on("click", ".newSubject", function () {
     $(this).remove();
     $("img[subject*='" + subject + "']").remove();
 })
+
+$("#searcher").on("keydown", function(event) {
+    if (event.which == "13") {
+        event.preventDefault();
+        gifPokerGame.inputSubject = $("#searcher").val().toUpperCase();
+        gifPokerGame.addSubject(gifPokerGame.inputSubject);
+    }
+})
