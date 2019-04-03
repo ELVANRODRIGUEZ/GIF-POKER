@@ -11,9 +11,9 @@ var gifPokerGame = {
         if (subjectToAdd != "") {
             var subjectsBlock = $(".selectedSubjects");
             var toBeAddedSubject =
-                "<span class='newSubject'>" +
+                "<div class='widthLimiter'><p class='newSubject'>" +
                 subjectToAdd +
-                "</span><img class='cassinoToken' subject='" +
+                "</p></div><img class='cassinoToken' subject='" +
                 subjectToAdd +
                 "' src='assets/images/CassinoCoin.png'>";
 

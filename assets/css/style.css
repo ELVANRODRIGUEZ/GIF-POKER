@@ -20,20 +20,20 @@ body {
 
 .container {
     width: 100%;
-    /* padding: 1vh; */
-    /* margin: 1vh; */
+    
 }
 
 .subjectList {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
+    width: 100%;
 
 }
 
 .subjectList-block1 {
 
-    width: 100%;
+    width: calc(100% - 163.5px )
 
 }
 
@@ -79,6 +79,8 @@ body {
     padding: 6px;
     border-radius: 5px;
     font-size: 10pt;
+    overflow-wrap: break-word;
+
 
 }
 
@@ -101,7 +103,6 @@ body {
 
 #pokerMaze {
     height: 30vh;
-    /* min-height: 60px; */
     filter: drop-shadow(5px 5px 5px black);
 
 }
@@ -258,6 +259,12 @@ body {
 
     .addSubject {
         min-width: 64px;
+    }
+
+    .subjectList-block1 {
+
+        width: calc(100% - 138.75px )
+    
     }
 
     #pokerMaze {
